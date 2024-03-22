@@ -1,0 +1,25 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "setuptools_scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "testpackage-qkit"
+version = "1.0.0"
+# dynamic = ["version"]
+description = "qkit test packaging deploymnet"
+requires-python = ">=3.7"
+dependencies = [
+	"pyqtgraph",
+	"zerorpc",
+	"jupyterlab",
+	"ipywidgets",
+	"h5py",
+	"pandas",
+	"numpy",
+	"zmq"
+]
+
+[tool.setuptools.packages.find]
+include = ["qkit"]
